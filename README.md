@@ -1,2 +1,3 @@
-# mypet-agenda
-App de Agenda para exercitar a criação de apps
+# Exercícios Grupo MyPet
+
+Apps diversos para exercitar a criação de apps
