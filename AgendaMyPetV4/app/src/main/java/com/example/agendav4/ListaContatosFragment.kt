@@ -24,7 +24,7 @@ class ListaContatosFragment(): Fragment() {
     ): View? {
         _binding = FragmentListaContatosBinding.inflate(inflater,container,false)
 
-        inicilizaLista()
+
 
         adapter = ContatosAdapter(mutableListOf(),::onBtEditorClick)
 
@@ -38,30 +38,6 @@ class ListaContatosFragment(): Fragment() {
         adapter.swapData(Agenda.listaContatos)
 
         return binding.root
-    }
-
-    private fun inicilizaLista(){
-        Agenda.listaContatos.addAll(
-            listOf(
-                Contato("1 Sabrina","123"),
-                Contato("2 Alex","456"),
-                Contato("3 Jaqueline","789"),
-                Contato("4 Genival","321"),
-                Contato("5 Sabrina","123"),
-                Contato("6 Alex","456"),
-                Contato("7 Jaqueline","789"),
-                Contato("8 Genival","321"),
-                Contato("9 Sabrina","123"),
-                Contato("10 Alex","456"),
-                Contato("11 Jaqueline","789"),
-                Contato("12 Genival","321"),
-                Contato("13 Sabrina","123"),
-                Contato("14 Alex","456"),
-                Contato("15 Jaqueline","789"),
-                Contato("16 Genival","321")
-
-            )
-        )
     }
 
     fun onBtEditorClick(indiceLista : Int){
